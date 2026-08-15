@@ -1,20 +1,22 @@
-import React, { useState, memo } from 'react';
+import React, { memo } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { FiHeart, FiEye } from 'react-icons/fi';
 import { FaHeart, FaStar } from 'react-icons/fa6';
+import { useWishlist } from '../../../context/WishlistContext';
 import './ProductCard.css';
 
 export const ProductCard = memo(({ product, index = 0 }) => {
   const navigate = useNavigate();
   const { i18n, t } = useTranslation(['home', 'common']);
+  const { isInWishlist, toggleWishlist } = useWishlist();
   const currentLang = i18n.language && i18n.language.startsWith('ar') ? 'ar' : 'en';
 
-  const [isWishlisted, setIsWishlisted] = useState(product.wishlist || false);
+  const isWishlisted = isInWishlist(product.id);
 
-  const toggleWishlist = (e) => {
+  const handleWishlistClick = (e) => {
     e.stopPropagation();
-    setIsWishlisted((prev) => !prev);
+    toggleWishlist(product);
   };
 
   const handleCardClick = () => {
@@ -79,7 +81,7 @@ export const ProductCard = memo(({ product, index = 0 }) => {
         <button
           type="button"
           className={`wishlist-btn ${isWishlisted ? 'active' : ''}`}
-          onClick={toggleWishlist}
+          onClick={handleWishlistClick}
           aria-label={isWishlisted ? 'Remove from wishlist' : 'Add to wishlist'}
         >
           {isWishlisted ? <FaHeart color="#DC6860" size={15} /> : <FiHeart size={15} />}

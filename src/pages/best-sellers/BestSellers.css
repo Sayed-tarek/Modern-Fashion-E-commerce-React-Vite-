@@ -199,6 +199,8 @@ html[dir="rtl"] .banner-content {
 
 /* Toolbar: Search & Sort */
 .toolbar-bar {
+  position: relative;
+  z-index: 500;
   display: flex;
   align-items: center;
   justify-content: space-between;

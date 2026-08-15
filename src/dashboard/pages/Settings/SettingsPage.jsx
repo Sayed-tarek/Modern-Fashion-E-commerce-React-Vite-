@@ -8,10 +8,10 @@ const SettingsPage = () => {
 
   const [general, setGeneral] = useState({
     storeName: "AERO STEP Fashion Store",
-    storeEmail: "support@aerostep.com",
-    phone: "+1 (555) 019-2834",
+    storeEmail: "tzsayed6@gmail.com",
+    phone: "01023838099",
     currency: "USD ($)",
-    timezone: "UTC-5 (Eastern Time)"
+    timezone: "UTC+2 (Cairo Time)"
   });
 
   const handleSave = (e) => {

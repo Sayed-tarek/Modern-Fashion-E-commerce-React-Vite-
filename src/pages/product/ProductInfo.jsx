@@ -16,12 +16,14 @@ import SizeSelector from './SizeSelector';
 import QuantitySelector from './QuantitySelector';
 import CartDrawer from '../../components/CartDrawer/CartDrawer';
 import CartToast from '../../components/CartToast/CartToast';
+import { useWishlist } from '../../context/WishlistContext';
 import './ProductInfo.css';
 
 export const ProductInfo = ({ product }) => {
   const { i18n, t } = useTranslation(['home', 'common']);
   const currentLang = i18n.language && i18n.language.startsWith('ar') ? 'ar' : 'en';
   const { addItem } = useCart();
+  const { isInWishlist, toggleWishlist } = useWishlist();
 
   const [selectedColor, setSelectedColor] = useState(
     product.colors && product.colors.length > 0 ? product.colors[0] : ''
@@ -30,10 +32,11 @@ export const ProductInfo = ({ product }) => {
     product.sizes && product.sizes.length > 0 ? product.sizes[0] : ''
   );
   const [quantity, setQuantity] = useState(1);
-  const [isWishlisted, setIsWishlisted] = useState(product.wishlist || false);
   const [isCartDrawerOpen, setIsCartDrawerOpen] = useState(false);
   const [showToast, setShowToast] = useState(false);
   const [lastAddedItem, setLastAddedItem] = useState(null);
+
+  const isWishlisted = isInWishlist(product.id);
 
   const getLocalizedText = (field, fallback) => {
     if (!field) return fallback;
@@ -173,7 +176,7 @@ export const ProductInfo = ({ product }) => {
             <button
               type="button"
               className={`icon-action-btn ${isWishlisted ? 'active' : ''}`}
-              onClick={() => setIsWishlisted(!isWishlisted)}
+              onClick={() => toggleWishlist(product)}
               aria-label="Wishlist"
               title={isWishlisted ? 'Remove from wishlist' : 'Add to wishlist'}
             >

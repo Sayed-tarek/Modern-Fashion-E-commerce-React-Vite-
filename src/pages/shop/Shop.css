@@ -196,6 +196,8 @@ html[dir="rtl"] .shop-banner-content {
 
 /* Modern Controls Toolbar */
 .shop-toolbar-bar {
+  position: relative;
+  z-index: 500;
   display: flex;
   align-items: center;
   justify-content: space-between;

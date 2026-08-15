@@ -219,7 +219,7 @@ export const Register = () => {
                       id="register-email"
                       type="email"
                       name="email"
-                      placeholder="name@example.com"
+                      placeholder="tzsayed6@gmail.com"
                       className={`auth-input ${errors.email ? 'has-error' : ''}`}
                       value={formData.email}
                       onChange={handleChange}
@@ -238,7 +238,7 @@ export const Register = () => {
                       id="register-phone"
                       type="tel"
                       name="phone"
-                      placeholder="+20 100 000 0000"
+                      placeholder="01023838099"
                       className="auth-input"
                       value={formData.phone}
                       onChange={handleChange}

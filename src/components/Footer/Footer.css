@@ -92,6 +92,16 @@ html[dir="rtl"] .footer-brand-col {
   color: var(--text-secondary);
 }
 
+.contact-link {
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.contact-link:hover {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
 .contact-icon {
   color: var(--primary);
   display: flex;

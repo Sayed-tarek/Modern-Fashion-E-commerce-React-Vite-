@@ -197,6 +197,35 @@
   color: var(--text-primary);
 }
 
+.wishlist-header-btn {
+  position: relative;
+}
+
+.wishlist-header-btn:hover {
+  border-color: var(--danger, #dc6860);
+  color: var(--danger, #dc6860);
+}
+
+.cart-badge {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 6px !important;
+  border-radius: 20px !important;
+  font-size: 0.72rem !important;
+  font-weight: 800 !important;
+  line-height: 1 !important;
+  box-sizing: border-box;
+}
+
+.wishlist-header-btn .wishlist-badge-num {
+  background-color: var(--danger, #dc6860) !important;
+  color: #ffffff !important;
+  margin-inline-start: 4px;
+}
+
 /* User Profile Circle Button with White Background */
 .user-btn {
   width: 40px;
@@ -281,23 +310,28 @@
   background-color: var(--surface-hover);
 }
 
+.hamburger-btn span,
 .hamburger-line {
+  display: block;
   width: 100%;
   height: 2px;
-  background-color: var(--text-primary);
+  background-color: var(--text-primary, #1a1a1a);
   border-radius: 2px;
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
+.hamburger-btn.open span:nth-child(1),
 .hamburger-btn.open .hamburger-line:nth-child(1) {
   transform: translateY(7px) rotate(45deg);
 }
 
+.hamburger-btn.open span:nth-child(2),
 .hamburger-btn.open .hamburger-line:nth-child(2) {
   opacity: 0;
   transform: translateX(-10px);
 }
 
+.hamburger-btn.open span:nth-child(3),
 .hamburger-btn.open .hamburger-line:nth-child(3) {
   transform: translateY(-7px) rotate(-45deg);
 }
@@ -518,6 +552,35 @@
     justify-content: center;
   }
 
+  .wishlist-header-btn {
+    width: 42px;
+    height: 42px;
+    padding: 0;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .wishlist-header-btn .btn-text {
+    display: none !important;
+  }
+
+  .wishlist-header-btn .wishlist-badge-num {
+    position: absolute;
+    top: -3px;
+    right: -3px;
+    width: 20px;
+    height: 20px;
+    background-color: var(--danger, #dc6860) !important;
+    color: #ffffff !important;
+    font-size: 0.72rem;
+    font-weight: 900;
+    border: 2px solid #ffffff;
+    margin: 0;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  }
+
   .header-cart-btn svg {
     margin: 0;
   }
@@ -563,6 +626,11 @@ html[dir="rtl"] .mobile-drawer.open {
 
 @media (max-width: 1024px) {
   html[dir="rtl"] .header-cart-btn .cart-badge {
+    right: auto;
+    left: -3px;
+  }
+
+  html[dir="rtl"] .wishlist-header-btn .wishlist-badge-num {
     right: auto;
     left: -3px;
   }

@@ -12,6 +12,7 @@ const Cart = lazy(() => import("../pages/cart/Cart"));
 const Login = lazy(() => import("../pages/auth/Login"));
 const Register = lazy(() => import("../pages/auth/Register"));
 const Product = lazy(() => import("../pages/product/Product"));
+const WishlistPage = lazy(() => import("../pages/wishlist/WishlistPage"));
 
 // Lazy load dashboard pages
 const DashboardLayout = lazy(() => import("../dashboard/layout/DashboardLayout"));
@@ -72,6 +73,10 @@ export const router = createBrowserRouter([
       {
         path: "/product/:slug",
         element: <LazyComponent Component={Product} />,
+      },
+      {
+        path: "/wishlist",
+        element: <LazyComponent Component={WishlistPage} />,
       },
       {
         path: "/dashboard",

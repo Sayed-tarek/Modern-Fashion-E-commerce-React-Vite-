@@ -119,7 +119,7 @@ export const Login = () => {
                     id="login-email"
                     type="email"
                     name="email"
-                    placeholder="name@example.com"
+                    placeholder="tzsayed6@gmail.com"
                     className={`auth-input ${errors.email ? 'has-error' : ''}`}
                     value={formData.email}
                     onChange={handleChange}

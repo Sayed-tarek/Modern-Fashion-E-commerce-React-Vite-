@@ -108,13 +108,13 @@ export const initialNotifications = [
 ];
 
 export const initialAdminProfile = {
-  name: "Said Al-Rashid",
+  name: "Sayed Tarek",
   role: "Super Admin",
-  email: "admin@aerostep.com",
+  email: "tzsayed6@gmail.com",
   avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80",
-  phone: "+1 (555) 234-5678",
-  location: "Dubai, UAE / New York, USA",
-  bio: "Head of Operations & Digital E-Commerce Store Lead at AERO STEP Fashion House.",
+  phone: "01023838099",
+  location: "Cairo, Egypt",
+  bio: "Head of Operations & Digital E-Commerce Lead at AERO STEP Fashion House.",
   twoFactorEnabled: true,
-  lastLogin: "2026-08-15 21:40 GMT"
+  lastLogin: "2026-08-16 01:00 GMT"
 };

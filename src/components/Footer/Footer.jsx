@@ -1,8 +1,10 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { FiMapPin, FiPhone, FiMail, FiArrowUp } from 'react-icons/fi';
-import { FaInstagram, FaFacebookF, FaXTwitter, FaTiktok, FaYoutube } from 'react-icons/fa6';
+import { FiMapPin, FiArrowUp } from 'react-icons/fi';
+import { FaPhone, FaInstagram, FaFacebookF, FaGithub } from 'react-icons/fa6';
+import { MdEmail } from 'react-icons/md';
 import brandLogoImg from "../../assets/images/header_bachground.jpg";
+import { CONTACT_INFO } from '../../utils/constants';
 import './Footer.css';
 
 export const Footer = () => {
@@ -43,34 +45,46 @@ export const Footer = () => {
             <div className="contact-list">
               <div className="contact-item">
                 <span className="contact-icon"><FiMapPin size={16} /></span>
-                <span>{t('footer:contact.address', '124 Fashion Ave, New York, NY')}</span>
+                <span>{t('footer:contact.address', CONTACT_INFO.addressEn)}</span>
               </div>
-              <div className="contact-item">
-                <span className="contact-icon"><FiPhone size={16} /></span>
-                <span dir="ltr" className="ltr-text">{t('footer:contact.phone', '+1 (800) 555-AERO')}</span>
-              </div>
-              <div className="contact-item">
-                <span className="contact-icon"><FiMail size={16} /></span>
-                <span dir="ltr" className="ltr-text">{t('footer:contact.email', 'support@aerostep.com')}</span>
-              </div>
+              <a href={CONTACT_INFO.phoneTel} className="contact-item contact-link">
+                <span className="contact-icon"><FaPhone size={14} /></span>
+                <span dir="ltr" className="ltr-text">{CONTACT_INFO.phone}</span>
+              </a>
+              <a href={CONTACT_INFO.emailMailto} className="contact-item contact-link">
+                <span className="contact-icon"><MdEmail size={17} /></span>
+                <span dir="ltr" className="ltr-text">{CONTACT_INFO.email}</span>
+              </a>
             </div>
 
             {/* Social Links */}
             <div className="social-links">
-              <a href="#instagram" className="social-icon-btn" aria-label="Instagram">
-                <FaInstagram />
-              </a>
-              <a href="#facebook" className="social-icon-btn" aria-label="Facebook">
+              <a
+                href={CONTACT_INFO.facebook}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-icon-btn"
+                aria-label="Facebook"
+              >
                 <FaFacebookF />
               </a>
-              <a href="#twitter" className="social-icon-btn" aria-label="Twitter">
-                <FaXTwitter />
+              <a
+                href={CONTACT_INFO.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-icon-btn"
+                aria-label="Instagram"
+              >
+                <FaInstagram />
               </a>
-              <a href="#tiktok" className="social-icon-btn" aria-label="TikTok">
-                <FaTiktok />
-              </a>
-              <a href="#youtube" className="social-icon-btn" aria-label="YouTube">
-                <FaYoutube />
+              <a
+                href={CONTACT_INFO.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-icon-btn"
+                aria-label="GitHub"
+              >
+                <FaGithub />
               </a>
             </div>
           </div>

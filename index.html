@@ -5,24 +5,155 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/jpeg" href="/header_bachground.jpg" />
-  
-  <!-- file bootstrap -->
-  <link rel="stylesheet" href="/style/bootstrap.min.css">
 
-  <!-- Google Fonts: Outfit for English, Cairo for Arabic -->
+  <!-- Critical Font Preconnect & Swap -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-  <!-- file style css -->
+  <!-- Bootstrap & Global Styles -->
+  <link rel="stylesheet" href="/style/bootstrap.min.css">
   <link rel="stylesheet" href="/style/style.css">
+
   <title>AERO STEP | Premium Fashion Store</title>
+
+  <!-- Critical Preloader Inline CSS (Prevents FOUC & Flashing) -->
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #FFFFFF;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    #initial-preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      z-index: 999999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(255, 255, 255, 0.98);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1),
+                  visibility 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    #initial-preloader.fade-out {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+
+    .ip-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+
+    .ip-brand {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .ip-logo-icon {
+      width: 44px;
+      height: 44px;
+      color: #515546;
+      animation: ipLogoPulse 1.6s ease-in-out infinite;
+    }
+
+    .ip-brand-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .ip-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 1.35rem;
+      font-weight: 800;
+      letter-spacing: 0.15em;
+      color: #1A1A1A;
+      line-height: 1;
+    }
+
+    .ip-subtitle {
+      font-family: 'Outfit', sans-serif;
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.25em;
+      color: #969A8E;
+      margin-top: 4px;
+    }
+
+    .ip-progress-track {
+      width: 140px;
+      height: 3px;
+      background-color: #EFF1EA;
+      border-radius: 999px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .ip-progress-bar {
+      width: 40%;
+      height: 100%;
+      background: linear-gradient(90deg, #515546, #EBB437);
+      border-radius: 999px;
+      animation: ipShimmer 1.2s ease-in-out infinite;
+    }
+
+    @keyframes ipLogoPulse {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.06); opacity: 0.85; }
+    }
+
+    @keyframes ipShimmer {
+      0% { transform: translateX(-100%); }
+      50% { transform: translateX(120%); }
+      100% { transform: translateX(250%); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .ip-logo-icon, .ip-progress-bar {
+        animation: none !important;
+      }
+      .ip-progress-bar { width: 100%; }
+    }
+  </style>
 </head>
 
 <body>
-  <div id="root"></div>
-  <script type="module" src="/src/main.jsx"></script>
+  <!-- Instant HTML Preloader (Renders at 0ms, eliminates flash) -->
+  <div id="initial-preloader" role="status" aria-label="Loading AERO STEP">
+    <div class="ip-content">
+      <div class="ip-brand">
+        <div class="ip-logo-icon">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8 28L20 8L32 28H24L20 20L16 28H8Z" fill="currentColor"/>
+          </svg>
+        </div>
+        <div class="ip-brand-text">
+          <span class="ip-title">AERO STEP</span>
+          <span class="ip-subtitle">MOVE AHEAD</span>
+        </div>
+      </div>
+      <div class="ip-progress-track">
+        <div class="ip-progress-bar"></div>
+      </div>
+    </div>
+  </div>
 
+  <div id="root"></div>
+
+  <script type="module" src="/src/main.jsx"></script>
   <script src="/js/jquery.slim.min.js"></script>
   <script src="/js/popper.min.js"></script>
   <script src="/js/bootstrap.min.js"></script>
