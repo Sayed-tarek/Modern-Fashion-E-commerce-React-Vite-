@@ -1,0 +1,29 @@
+{
+  "shop": {
+    "title": "Shop",
+    "showingProducts": "Showing Products",
+    "noProductsFound": "No Products Found"
+  },
+  "sorting": {
+    "sortBy": "Sort By",
+    "newest": "Newest",
+    "oldest": "Oldest",
+    "priceLowToHigh": "Price Low To High",
+    "priceHighToLow": "Price High To Low",
+    "highestRated": "Highest Rated",
+    "lowestRated": "Lowest Rated"
+  },
+  "filters": {
+    "categories": "Categories",
+    "brands": "Brands",
+    "colors": "Colors",
+    "sizes": "Sizes",
+    "price": "Price",
+    "availability": "Availability",
+    "rating": "Rating",
+    "clearFilters": "Clear Filters"
+  },
+  "pagination": {
+    "loadMore": "Load More"
+  }
+}

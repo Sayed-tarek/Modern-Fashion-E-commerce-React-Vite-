@@ -1,0 +1,29 @@
+{
+  "shop": {
+    "title": "المتجر",
+    "showingProducts": "عرض المنتجات",
+    "noProductsFound": "لم يتم العثور على منتجات"
+  },
+  "sorting": {
+    "sortBy": "ترتيب حسب",
+    "newest": "الأحدث",
+    "oldest": "الأقدم",
+    "priceLowToHigh": "السعر: من الأقل إلى الأعلى",
+    "priceHighToLow": "السعر: من الأعلى إلى الأقل",
+    "highestRated": "الأعلى تقييماً",
+    "lowestRated": "الأقل تقييماً"
+  },
+  "filters": {
+    "categories": "الفئات",
+    "brands": "العلامات التجارية",
+    "colors": "الألوان",
+    "sizes": "المقاسات",
+    "price": "السعر",
+    "availability": "التوفر",
+    "rating": "التقييم",
+    "clearFilters": "مسح التصفية"
+  },
+  "pagination": {
+    "loadMore": "تحميل المزيد"
+  }
+}

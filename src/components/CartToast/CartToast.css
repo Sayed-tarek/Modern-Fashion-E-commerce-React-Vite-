@@ -1,0 +1,185 @@
+/* Root Wrapper for Toast Portal - Centered Top */
+.cart-toast-root-wrapper {
+  position: fixed;
+  top: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10000;
+  pointer-events: none;
+  width: auto;
+  max-width: 92vw;
+}
+
+html[dir="rtl"] .cart-toast-root-wrapper {
+  left: 50%;
+  right: auto;
+  transform: translateX(-50%);
+}
+
+/* Toast Card Container */
+.cart-toast-card {
+  pointer-events: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 14px 18px;
+  min-width: 340px;
+  max-width: 460px;
+  background-color: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.16);
+  animation: toastSlideDown 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+html[dir="rtl"] .cart-toast-card {
+  direction: rtl;
+  text-align: right;
+}
+
+html[dir="ltr"] .cart-toast-card {
+  direction: ltr;
+  text-align: left;
+}
+
+/* Top Header Row */
+.toast-top-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.toast-status-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.toast-success-icon {
+  color: var(--success);
+  flex-shrink: 0;
+}
+
+.toast-success-title {
+  font-size: 0.9rem;
+  font-weight: 800;
+  color: var(--text-primary);
+}
+
+.toast-close-icon {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.toast-close-icon:hover {
+  color: var(--danger);
+  background-color: rgba(220, 104, 96, 0.08);
+}
+
+/* Product & Actions Row */
+.toast-product-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: var(--surface);
+  padding: 8px 12px;
+  border-radius: 14px;
+  border: 1px solid var(--border-light);
+}
+
+.toast-product-thumb {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 1px solid var(--border-light);
+  background-color: var(--bg);
+}
+
+.toast-info-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.toast-product-name {
+  font-size: 0.84rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0;
+}
+
+.toast-view-cart-btn {
+  background-color: var(--primary);
+  color: var(--text-white);
+  border: none;
+  border-radius: 20px;
+  padding: 7px 16px;
+  font-size: 0.8rem;
+  font-weight: 800;
+  cursor: pointer;
+  white-space: nowrap;
+  box-shadow: 0 4px 12px rgba(81, 85, 70, 0.2);
+  transition: all 0.25s ease;
+  flex-shrink: 0;
+}
+
+.toast-view-cart-btn:hover {
+  background-color: var(--primary-hover);
+  transform: translateY(-1px);
+}
+
+@keyframes toastSlideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-24px) scale(0.94);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes toastSlideUp {
+  from {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-24px) scale(0.94);
+  }
+}
+
+@media (max-width: 576px) {
+  .cart-toast-root-wrapper {
+    top: 16px;
+    width: calc(100% - 24px);
+    max-width: 100%;
+  }
+
+  .cart-toast-card {
+    min-width: 0;
+    width: 100%;
+    padding: 12px 14px;
+    gap: 8px;
+    border-radius: 18px;
+  }
+}

@@ -1,0 +1,242 @@
+import React, { useState, useEffect, memo } from 'react';
+import { Link, useLocation } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+import { useCart } from 'react-use-cart';
+import LanguageSwitcher from '../../i18n/LanguageSwitcher';
+import CartDrawer from '../CartDrawer/CartDrawer';
+import brandLogoImg from "../../assets/images/header_bachground.jpg";
+import './Navbar.css';
+
+export const Navbar = memo(() => {
+  const { t } = useTranslation('navbar');
+  const location = useLocation();
+  const { totalItems } = useCart();
+
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isCartDrawerOpen, setIsCartDrawerOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 20) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  useEffect(() => {
+    if (isMobileMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+  }, [isMobileMenuOpen]);
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen((prev) => !prev);
+  };
+
+  const closeMobileMenu = () => {
+    setIsMobileMenuOpen(false);
+  };
+
+  const isHome = location.pathname === '/';
+  const isShop = location.pathname === '/shop';
+  const isBestSellers = location.pathname === '/best-sellers';
+  const isProduct = location.pathname.startsWith('/product');
+
+  return (
+    <>
+      <header className={`navbar-header ${isScrolled ? 'scrolled' : ''}`}>
+        <div className="navbar-container">
+          {/* Logo with Brand Background Image Icon */}
+          <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+            <div className="logo-icon">
+              <img src={brandLogoImg} alt="AERO STEP" className="brand-logo-img" loading="lazy" decoding="async" />
+            </div>
+            <div className="logo-text">
+              <span className="logo-title">AERO STEP</span>
+              <span className="logo-subtitle">MOVE AHEAD</span>
+            </div>
+          </Link>
+
+          {/* Desktop Menu */}
+          <nav className="navbar-nav">
+            <ul className="navbar-menu">
+              <li>
+                <Link to="/" className={`nav-link ${isHome ? 'active' : ''}`}>
+                  {t('nav.home', 'Home')}
+                </Link>
+              </li>
+              <li>
+                <Link to="/shop" className={`nav-link ${isShop ? 'active' : ''}`}>
+                  {t('nav.shop', 'Shop')}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/product/urban-classic-sneakers"
+                  className={`nav-link ${isProduct ? 'active' : ''}`}
+                >
+                  {t('nav.productDetails', 'Product Details')}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/best-sellers"
+                  className={`nav-link badge-sale ${isBestSellers ? 'active' : ''}`}
+                >
+                  {t('nav.bestSellers', 'Best Sellers')}
+                </Link>
+              </li>
+            </ul>
+          </nav>
+
+          {/* Desktop Actions */}
+          <div className="navbar-actions">
+            <div className="desktop-only-action">
+              <LanguageSwitcher />
+            </div>
+
+            <Link to="/login" className="nav-action-btn user-btn desktop-only-action" aria-label="Sign In">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+              <span className="btn-text">{t('nav.login', 'Sign In')}</span>
+            </Link>
+
+            {/* Cart Button Opens CartDrawer Sidebar */}
+            <button
+              className="nav-action-btn cart-btn header-cart-btn"
+              onClick={() => setIsCartDrawerOpen(true)}
+              aria-label="Cart"
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <path d="M16 10a4 4 0 0 1-8 0"></path>
+              </svg>
+              <span className="btn-text cart-text-desktop">{t('nav.cart', 'Cart')}</span>
+              <span className="cart-badge">{totalItems}</span>
+            </button>
+
+            {/* Hamburger Menu Toggle */}
+            <button 
+              className={`hamburger-btn ${isMobileMenuOpen ? 'open' : ''}`}
+              onClick={toggleMobileMenu}
+              aria-label="Toggle navigation menu"
+              aria-expanded={isMobileMenuOpen}
+            >
+              <span className="hamburger-line"></span>
+              <span className="hamburger-line"></span>
+              <span className="hamburger-line"></span>
+            </button>
+          </div>
+        </div>
+
+        {/* Mobile Drawer Backdrop */}
+        <div 
+          className={`mobile-overlay ${isMobileMenuOpen ? 'active' : ''}`}
+          onClick={closeMobileMenu}
+        />
+
+        {/* Mobile Drawer Menu */}
+        <div className={`mobile-drawer ${isMobileMenuOpen ? 'open' : ''}`}>
+          <div className="drawer-header">
+            <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+              <div className="logo-icon">
+                <img src={brandLogoImg} alt="AERO STEP" className="brand-logo-img" loading="lazy" decoding="async" />
+              </div>
+              <div className="logo-text">
+                <span className="logo-title">AERO STEP</span>
+                <span className="logo-subtitle">MOVE AHEAD</span>
+              </div>
+            </Link>
+            <button className="close-btn" onClick={closeMobileMenu} aria-label="Close menu">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+              </svg>
+            </button>
+          </div>
+
+          {/* Drawer Nav Links */}
+          <nav className="drawer-nav">
+            <ul className="drawer-menu">
+              <li>
+                <Link to="/" className={`drawer-link ${isHome ? 'active' : ''}`} onClick={closeMobileMenu}>
+                  {t('nav.home', 'Home')}
+                </Link>
+              </li>
+              <li>
+                <Link to="/shop" className={`drawer-link ${isShop ? 'active' : ''}`} onClick={closeMobileMenu}>
+                  {t('nav.shop', 'Shop')}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/product/urban-classic-sneakers"
+                  className={`drawer-link ${isProduct ? 'active' : ''}`}
+                  onClick={closeMobileMenu}
+                >
+                  {t('nav.productDetails', 'Product Details')}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/best-sellers"
+                  className={`drawer-link ${isBestSellers ? 'active' : ''}`}
+                  onClick={closeMobileMenu}
+                >
+                  {t('nav.bestSellers', 'Best Sellers')}
+                </Link>
+              </li>
+            </ul>
+          </nav>
+
+          {/* Drawer Action Buttons */}
+          <div className="drawer-footer">
+            <LanguageSwitcher />
+            <Link to="/login" className="drawer-action-btn user-btn" onClick={closeMobileMenu}>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+              <span>{t('nav.login', 'Sign In')}</span>
+            </Link>
+            <button
+              className="drawer-action-btn drawer-cart-btn"
+              onClick={() => {
+                closeMobileMenu();
+                setIsCartDrawerOpen(true);
+              }}
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <path d="M16 10a4 4 0 0 1-8 0"></path>
+              </svg>
+              <span>{t('nav.cart', 'Cart')}</span>
+              <span className="drawer-cart-badge">{totalItems}</span>
+            </button>
+          </div>
+        </div>
+      </header>
+
+      {/* Cart Drawer Component */}
+      <CartDrawer
+        isOpen={isCartDrawerOpen}
+        onClose={() => setIsCartDrawerOpen(false)}
+      />
+    </>
+  );
+});
+
+Navbar.displayName = 'Navbar';
+
+export default Navbar;

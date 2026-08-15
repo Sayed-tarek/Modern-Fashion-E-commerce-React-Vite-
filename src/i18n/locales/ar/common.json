@@ -1,0 +1,30 @@
+{
+  "buttons": {
+    "shopNow": "تسوق الآن",
+    "viewAll": "عرض الكل",
+    "loadMore": "تحميل المزيد",
+    "addToCart": "إضافة إلى السلة",
+    "buyNow": "شراء الآن",
+    "continueShopping": "مواصلة التسوق",
+    "checkout": "إتمام الشراء",
+    "subscribe": "اشتراك",
+    "save": "حفظ",
+    "cancel": "إلغاء",
+    "search": "بحث",
+    "filter": "تصفية",
+    "apply": "تطبيق",
+    "clear": "مسح",
+    "readMore": "اقرأ المزيد",
+    "viewDetails": "عرض التفاصيل"
+  },
+  "general": {
+    "loading": "جاري التحميل...",
+    "noResults": "لا توجد نتائج",
+    "new": "جديد",
+    "sale": "تخفيضات",
+    "featured": "مميز",
+    "bestSeller": "الأكثر مبيعاً",
+    "outOfStock": "غير متوفر",
+    "inStock": "متوفر في المخزون"
+  }
+}

@@ -1,0 +1,133 @@
+/* Page Wrapper */
+.product-page-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--bg);
+  color: var(--text-primary);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main Container */
+.product-main-container {
+  width: 100%;
+  max-width: 1360px;
+  margin: 100px auto 60px auto;
+  padding: 0 24px;
+  box-sizing: border-box;
+  animation: pageFadeIn 0.5s ease-out forwards;
+}
+
+/* Breadcrumbs Bar */
+.breadcrumb-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.86rem;
+  color: var(--text-muted);
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+}
+
+.breadcrumb-link {
+  text-decoration: none;
+  color: var(--text-muted);
+  transition: color 0.2s ease;
+}
+
+.breadcrumb-link:hover {
+  color: var(--primary);
+}
+
+.breadcrumb-separator {
+  color: var(--border);
+  font-size: 0.75rem;
+}
+
+.breadcrumb-current {
+  color: var(--text-primary);
+  font-weight: 700;
+}
+
+/* 2-Column Details Grid */
+.product-details-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: flex-start;
+}
+
+/* Sticky Purchase Panel on Desktop */
+.product-info-sticky-col {
+  position: sticky;
+  top: 100px;
+  z-index: 10;
+}
+
+/* Error State Container */
+.product-not-found {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 16px;
+  padding: 60px 20px;
+}
+
+.not-found-btn {
+  padding: 12px 28px;
+  border-radius: 30px;
+  background-color: var(--primary);
+  color: var(--text-white);
+  text-decoration: none;
+  font-weight: 700;
+  box-shadow: 0 4px 14px rgba(81, 85, 70, 0.25);
+}
+
+@keyframes pageFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsiveness Rules */
+@media (max-width: 1199px) {
+  .product-details-grid {
+    gap: 36px;
+  }
+}
+
+@media (max-width: 991px) {
+  .product-main-container {
+    margin-top: 86px;
+    padding: 0 16px;
+  }
+
+  .product-details-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .product-info-sticky-col {
+    position: static;
+  }
+}
+
+@media (max-width: 576px) {
+  .product-main-container {
+    margin-top: 80px;
+    padding: 0 14px;
+  }
+
+  .breadcrumb-bar {
+    font-size: 0.8rem;
+    margin-bottom: 20px;
+  }
+}

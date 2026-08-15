@@ -1,0 +1,401 @@
+/* Main Header Wrapper */
+.header-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg);
+  box-sizing: border-box;
+}
+
+/* Outer Container for Rounded Hero Banner */
+.hero-container-outer {
+  width: 100%;
+  max-width: 1360px;
+  margin: 80px auto 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/* Rounded Hero Banner Card */
+.hero-banner {
+  position: relative;
+  width: 100%;
+  min-height: 560px;
+  border-radius: 28px;
+  overflow: hidden;
+  background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.94) 0%, rgba(255, 255, 255, 0.72) 45%, rgba(255, 255, 255, 0.2) 100%), var(--header-bg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 48px 60px;
+  box-sizing: border-box;
+  box-shadow: 0 8px 30px var(--shadow-color);
+  gap: 32px;
+}
+
+.hero-content {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  z-index: 2;
+  flex-shrink: 1;
+}
+
+.hero-subtitle {
+  display: inline-block;
+  padding: 6px 16px;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: var(--text-primary);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.hero-heading {
+  font-size: 3.1rem;
+  font-weight: 900;
+  line-height: 1.08;
+  color: var(--text-primary);
+  margin: 0 0 20px 0;
+  letter-spacing: -0.02em;
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
+}
+
+.hero-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #2D3748;
+  font-weight: 500;
+  margin: 0 0 32px 0;
+  max-width: 440px;
+}
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px 28px;
+  border-radius: 40px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  color: var(--text-white);
+  border-color: var(--primary);
+  box-shadow: 0 4px 14px rgba(81, 85, 70, 0.3);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-hover);
+  border-color: var(--primary-hover);
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background-color: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(8px);
+  color: var(--text-primary);
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.btn-secondary:hover {
+  background-color: var(--bg);
+  transform: translateY(-2px);
+    color: var(--text-primary);
+
+}
+
+/* Floating Feature Cards & Rating Pill (Desktop) */
+.hero-features-floating {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-end;
+  z-index: 3;
+  flex-shrink: 0;
+}
+
+.hero-feature-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.feature-card {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 20px;
+  padding: 12px 18px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: 250px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  transition: all 0.25s ease;
+  box-sizing: border-box;
+}
+
+.feature-card:hover {
+  transform: translateY(-3px);
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.09);
+}
+
+.feature-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--surface);
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border: 1px solid var(--border);
+}
+
+.feature-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.feature-info h4 {
+  margin: 0;
+  font-size: 0.86rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.25;
+}
+
+.feature-info p {
+  margin: 2px 0 0 0;
+  font-size: 0.73rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+/* Rating Pill Card */
+.rating-pill-card {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  border-radius: 40px;
+  padding: 10px 18px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  box-sizing: border-box;
+}
+
+.avatar-stack {
+  display: flex;
+  align-items: center;
+}
+
+.avatar-stack img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  margin-left: -8px;
+  object-fit: cover;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.avatar-stack img:first-child {
+  margin-left: 0;
+}
+
+.rating-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.rating-title {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.2;
+}
+
+.rating-stars {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 2px;
+}
+
+.rating-score {
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: var(--text-primary);
+}
+
+.stars {
+  color: #F59E0B;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+}
+
+/* Responsiveness */
+@media (max-width: 1024px) {
+  .hero-banner {
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    height: auto;
+    padding: 40px 32px;
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.82) 100%), var(--header-bg);
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero-heading {
+    font-size: 2.4rem;
+  }
+
+  .hero-features-floating {
+    width: 100%;
+    align-items: stretch;
+    margin-top: 8px;
+  }
+
+  .hero-feature-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+    width: 100%;
+  }
+
+  .feature-card {
+    width: 100%;
+  }
+
+  .rating-pill-card {
+    width: 100%;
+    justify-content: center;
+    border-radius: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-container-outer {
+    padding: 0 12px;
+    margin-top: 12px;
+  }
+
+  .hero-banner {
+    border-radius: 24px;
+    padding: 24px 16px;
+    gap: 20px;
+  }
+
+  .hero-content {
+    background: rgba(255, 255, 255, 0.88);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    padding: 24px 18px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  }
+
+  .hero-heading {
+    font-size: 1.95rem;
+    color: #1A1A1A;
+    margin-bottom: 14px;
+  }
+
+  .hero-description {
+    font-size: 0.92rem;
+    line-height: 1.55;
+    color: #2D3748;
+    font-weight: 600;
+    margin-bottom: 24px;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .hero-feature-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* RTL Specific Styles */
+html[dir="rtl"] .hero-banner {
+  background-image: linear-gradient(225deg, rgba(255, 255, 255, 0.94) 0%, rgba(255, 255, 255, 0.72) 45%, rgba(255, 255, 255, 0.2) 100%), var(--header-bg);
+}
+
+@media (max-width: 1024px) {
+  html[dir="rtl"] .hero-banner {
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.82) 100%), var(--header-bg);
+  }
+}
+
+html[dir="rtl"] .hero-features-floating {
+  align-items: flex-start;
+}
+
+html[dir="rtl"] .avatar-stack img {
+  margin-left: 0;
+  margin-right: -8px;
+}
+
+html[dir="rtl"] .avatar-stack img:first-child {
+  margin-right: 0;
+}
+
+html[dir="rtl"] .hero-heading,
+html[dir="rtl"] .hero-description,
+html[dir="rtl"] .hero-subtitle {
+  text-align: right;
+}
+
+html[dir="rtl"] .hero-actions {
+  flex-direction: row;
+}
+
+@media (max-width: 768px) {
+  html[dir="rtl"] .hero-actions {
+    flex-direction: column;
+  }
+}
+
+html[dir="rtl"] .btn svg {
+  transform: scaleX(-1);
+}

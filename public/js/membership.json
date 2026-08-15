@@ -1,0 +1,80 @@
+{
+  "badge": {
+    "en": "MEMBERSHIP",
+    "ar": "العضوية المميزة"
+  },
+  "title": {
+    "en": "Join the Aero Step Club",
+    "ar": "انضم إلى نادي الأعضاء VIP"
+  },
+  "description": {
+    "en": "Become a member and enjoy exclusive discounts, early access to collections, reward points, and free shipping.",
+    "ar": "انضم كعضو واستمتع بخصومات حصرية، وصول مبكر لأحدث التشكيلات، نقاط مكافآت، وشحن مجاني."
+  },
+  "cta": {
+    "buttonText": {
+      "en": "Join Now",
+      "ar": "انضم الآن"
+    },
+    "subtext": {
+      "en": "100% Free Membership",
+      "ar": "عضوية مجانية 100%"
+    }
+  },
+  "cardGraphic": {
+    "title": "AERO STEP VIP",
+    "number": "•••• •••• •••• 8824",
+    "holder": "VIP MEMBER",
+    "expiry": "12/28"
+  },
+  "benefits": [
+    {
+      "id": "welcome-discount",
+      "icon": "FiPercent",
+      "title": {
+        "en": "Welcome Discount",
+        "ar": "خصم ترحيبي"
+      }
+    },
+    {
+      "id": "early-access",
+      "icon": "FiZap",
+      "title": {
+        "en": "Early Access",
+        "ar": "وصول مبكر للتشكيلات"
+      }
+    },
+    {
+      "id": "exclusive-offers",
+      "icon": "FiTag",
+      "title": {
+        "en": "Exclusive Offers",
+        "ar": "عروض حصرية"
+      }
+    },
+    {
+      "id": "reward-points",
+      "icon": "FiAward",
+      "title": {
+        "en": "Reward Points",
+        "ar": "نقاط مكافآت"
+      }
+    },
+    {
+      "id": "birthday-gift",
+      "icon": "FiGift",
+      "title": {
+        "en": "Birthday Gift",
+        "ar": "هدية عيد الميلاد"
+      }
+    },
+    {
+      "id": "free-shipping",
+      "icon": "FiTruck",
+      "title": {
+        "en": "Free Shipping",
+        "ar": "شحن مجاني"
+      }
+    }
+  ]
+}

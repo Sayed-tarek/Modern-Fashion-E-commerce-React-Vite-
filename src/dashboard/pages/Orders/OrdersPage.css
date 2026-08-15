@@ -1,0 +1,6 @@
+/* src/dashboard/pages/Orders/OrdersPage.css */
+.order-table-id {
+  font-family: monospace;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}

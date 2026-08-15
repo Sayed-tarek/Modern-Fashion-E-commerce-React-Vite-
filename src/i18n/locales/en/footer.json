@@ -1,0 +1,36 @@
+{
+  "brandDescription": "Discover premium footwear & urban fashion engineered for ultimate comfort, durability, and modern style.",
+  "sections": {
+    "shop": "Shop",
+    "customerService": "Customer Service",
+    "company": "Company",
+    "followUs": "Follow Us",
+    "paymentMethods": "Accepted Payment Methods"
+  },
+  "links": {
+    "newArrivals": "New Arrivals",
+    "bestSellers": "Best Sellers",
+    "sneakers": "Sneakers",
+    "runningShoes": "Running Shoes",
+    "lifestyle": "Lifestyle",
+    "sale": "Special Offers",
+    "privacyPolicy": "Privacy Policy",
+    "termsAndConditions": "Terms & Conditions",
+    "shipping": "Shipping & Delivery",
+    "returns": "Easy Returns",
+    "faqs": "Help Center & FAQs",
+    "trackOrder": "Track Your Order",
+    "contactUs": "Contact Us",
+    "ourStory": "Our Story",
+    "sustainability": "Sustainability",
+    "careers": "Careers"
+  },
+  "contact": {
+    "address": "124 Fashion Ave, New York, NY",
+    "phone": "+1 (800) 555-AERO",
+    "email": "support@aerostep.com"
+  },
+  "legal": {
+    "allRightsReserved": "All Rights Reserved"
+  }
+}

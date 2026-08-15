@@ -1,0 +1,136 @@
+/* Custom Select Container */
+.custom-dropdown-container {
+  position: relative;
+  display: inline-block;
+  user-select: none;
+  z-index: 100;
+}
+
+/* Trigger Pill Button */
+.custom-dropdown-trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: 1px solid var(--border);
+  background-color: var(--bg);
+  color: var(--text-primary);
+  font-size: 0.88rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  white-space: nowrap;
+}
+
+.custom-dropdown-trigger:hover {
+  border-color: var(--primary);
+  box-shadow: 0 4px 14px rgba(81, 85, 70, 0.15);
+  transform: translateY(-1px);
+}
+
+.custom-dropdown-trigger.open {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(81, 85, 70, 0.15);
+}
+
+.dropdown-label {
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.dropdown-value {
+  font-weight: 800;
+  color: var(--text-primary);
+}
+
+.dropdown-chevron {
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  margin-inline-start: 4px;
+}
+
+.dropdown-chevron.rotated {
+  transform: rotate(180deg);
+}
+
+/* Floating Glassmorphic Menu Card */
+.custom-dropdown-menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  min-width: 220px;
+  background-color: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 8px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+  z-index: 150;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  animation: dropdownFadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  transform-origin: top right;
+}
+
+html[dir="rtl"] .custom-dropdown-menu {
+  right: auto;
+  left: 0;
+  transform-origin: top left;
+}
+
+/* Menu Options */
+.custom-dropdown-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px;
+  border-radius: 12px;
+  background: transparent;
+  border: none;
+  color: var(--text-secondary);
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: inherit;
+}
+
+html[dir="rtl"] .custom-dropdown-item {
+  text-align: right;
+}
+
+.custom-dropdown-item:hover {
+  background-color: var(--surface);
+  color: var(--text-primary);
+}
+
+.custom-dropdown-item.selected {
+  background-color: rgba(81, 85, 70, 0.08);
+  color: var(--primary);
+  font-weight: 800;
+}
+
+.item-check-icon {
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+}
+
+@keyframes dropdownFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-8px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}

@@ -1,0 +1,521 @@
+[
+  {
+    "id": 1,
+    "slug": "urban-classic-sneakers",
+    "category": "Sneakers",
+    "brand": "StrideCo",
+    "images": [
+      "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1600185365483-26d7c92e4e63?auto=format&fit=crop&w=800&q=80"
+    ],
+    "title": {
+      "en": "Urban Classic Sneakers",
+      "ar": "سنيكرز أوربان كلاسيك"
+    },
+    "description": {
+      "en": "Everyday low-top sneakers with a cushioned sole and breathable canvas upper, designed for all-day comfort and street style.",
+      "ar": "حذاء سنيكرز يومي بتصميم منخفض ونعل مبطن وقماش قابل للتهوية، مثالي للراحة طوال اليوم والإطلالة العصرية."
+    },
+    "price": 59,
+    "oldPrice": 79,
+    "discount": 25,
+    "currency": "USD",
+    "rating": 4.5,
+    "reviews": 342,
+    "stock": 84,
+    "sizes": ["40", "41", "42", "43", "44", "45"],
+    "colors": ["White", "Black"],
+    "isNew": true,
+    "isFeatured": true,
+    "wishlist": false,
+    "buttonText": {
+      "en": "Add to Cart",
+      "ar": "أضف إلى السلة"
+    }
+  },
+  {
+    "id": 2,
+    "slug": "airflow-pro-running-shoes",
+    "category": "Running Shoes",
+    "brand": "VeloRun",
+    "images": [
+      "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=800&q=80"
+    ],
+    "title": {
+      "en": "Airflow Pro Running Shoes",
+      "ar": "حذاء جري إيرفلو برو"
+    },
+    "description": {
+      "en": "Lightweight performance running shoes with responsive foam cushioning and a mesh upper for maximum breathability on long runs.",
+      "ar": "حذاء جري خفيف الوزن بتقنية تبطين مرنة وقماش شبكي يوفر تهوية ممتازة أثناء الجري لمسافات طويلة."
+    },
+    "price": 89,
+    "oldPrice": 120,
+    "discount": 26,
+    "currency": "USD",
+    "rating": 4.7,
+    "reviews": 618,
+    "stock": 56,
+    "sizes": ["39", "40", "41", "42", "43", "44"],
+    "colors": ["Grey", "Blue", "Black"],
+    "isNew": true,
+    "isFeatured": true,
+    "wishlist": false,
+    "buttonText": {
+      "en": "Add to Cart",
+      "ar": "أضف إلى السلة"
+    }
+  },
+  {
+    "id": 3,
+    "slug": "essential-pullover-hoodie",
+    "category": "Hoodies",
+    "brand": "Novexa Wear",
+    "images": [
+      "https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1509942774463-acf339cf87d5?auto=format&fit=crop&w=800&q=80"
+    ],
+    "title": {
+      "en": "Essential Pullover Hoodie",
+      "ar": "هودي إسنشال بولوفر"
+    },
+    "description": {
+      "en": "A soft cotton-blend pullover hoodie with a kangaroo pocket and ribbed cuffs, built for everyday comfort and layering.",
+      "ar": "هودي قطني ناعم بجيب أمامي وأطراف مضلعة، مثالي للاستخدام اليومي والتنسيق مع طبقات الملابس."
+    },
+    "price": 45,
+    "oldPrice": 60,
+    "discount": 25,
+    "currency": "USD",
+    "rating": 4.4,
+    "reviews": 210,
+    "stock": 97,
+    "sizes": ["S", "M", "L", "XL"],
+    "colors": ["Black", "Heather Grey"],
+    "isNew": true,
+    "isFeatured": false,
+    "wishlist": false,
+    "buttonText": {
+      "en": "Add to Cart",
+      "ar": "أضف إلى السلة"
+    }
+  },
+  {
+    "id": 4,
+    "slug": "heavyweight-oversized-hoodie",
+    "category": "Oversized Hoodies",
+    "brand": "DropCulture",
+    "images": [
+      "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1618354691373-d851c5c3a990?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1611312449408-fcece27cdbb7?auto=format&fit=crop&w=800&q=80"
+    ],
+    "title": {
+      "en": "Heavyweight Oversized Hoodie",
+      "ar": "هودي أوفرسايز ثقيل الخامة"
+    },
+    "description": {
+      "en": "Oversized fit hoodie crafted from heavyweight fleece for a bold streetwear silhouette and cozy warmth.",
+      "ar": "هودي بقصة أوفرسايز واسعة مصنوع من قماش فليس سميك يمنح مظهرًا ستريت ودفء عالي."
+    },
+    "price": 65,
+    "oldPrice": 85,
+    "discount": 24,
+    "currency": "USD",
+    "rating": 4.6,
+    "reviews": 489,
+    "stock": 41,
+    "sizes": ["M", "L", "XL", "XXL"],
+    "colors": ["Beige", "Black", "Olive"],
+    "isNew": true,
+    "isFeatured": true,
+    "wishlist": false,
+    "buttonText": {
+      "en": "Add to Cart",
+      "ar": "أضف إلى السلة"
+    }
+  },
+  {
+    "id": 5,
+    "slug": "classic-crew-tshirt",
+    "category": "T-Shirts",
+    "brand": "Novexa Wear",
+    "images": [
+      "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=800&q=80"
+    ],
+    "title": {
+      "en": "Classic Crew Neck T-Shirt",
+      "ar": "تيشيرت كلاسيك برقبة دائرية"
+    },
+    "description": {
+      "en": "A wardrobe staple made from 100% combed cotton, offering a soft feel and reliable everyday fit.",
+      "ar": "قطعة أساسية في خزانتك مصنوعة من القطن الممشط بنسبة 100%، توفر ملمسًا ناعمًا ومقاسًا مريحًا للاستخدام اليومي."
+    },
+    "price": 19,
+    "oldPrice": 25,
+    "discount": 24,
+    "currency": "USD",
+    "rating": 4.3,
+    "reviews": 890,
+    "stock": 120,
+    "sizes": ["S", "M", "L", "XL", "XXL"],
+    "colors": ["White", "Black", "Navy"],
+    "isNew": true,
+    "isFeatured": false,
+    "wishlist": false,
+    "buttonText": {
+      "en": "Add to Cart",
+      "ar": "أضف إلى السلة"
+    }
+  },
+  {
+    "id": 6,
+    "slug": "drop-shoulder-oversized-tee",
+    "category": "Oversized T-Shirts",
+    "brand": "DropCulture",
+    "images": [
+      "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1503341504253-dff4815485f1?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?auto=format&fit=crop&w=800&q=80"
+    ],
+    "title": {
+      "en": "Drop Shoulder Oversized Tee",
+      "ar": "تيشيرت أوفرسايز بأكتاف نازلة"
+    },
+    "description": {
+      "en": "Relaxed drop-shoulder tee made from heavyweight cotton for a modern streetwear look and durable everyday wear.",
+      "ar": "تيشيرت واسع بأكتاف نازلة مصنوع من قطن سميك يمنح إطلالة ستريت عصرية ومتانة في الاستخدام اليومي."
+    },
+    "price": 27,
+    "oldPrice": 35,
+    "discount": 23,
+    "currency": "USD",
+    "rating": 4.5,
+    "reviews": 176,
+    "stock": 65,
+    "sizes": ["S", "M", "L", "XL"],
+    "colors": ["Sand", "Black"],
+    "isNew": true,
+    "isFeatured": false,
+    "wishlist": false,
+    "buttonText": {
+      "en": "Add to Cart",
+      "ar": "أضف إلى السلة"
+    }
+  },
+  {
+    "id": 7,
+    "slug": "tactical-cargo-pants",
+    "category": "Cargo Pants",
+    "brand": "FieldGear",
+    "images": [
+      "https://images.unsplash.com/photo-1602293589930-45821b8b41d3?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1517438476312-10d79c077509?auto=format&fit=crop&w=800&q=80"
+    ],
+    "title": {
+      "en": "Tactical Cargo Pants",
+      "ar": "بنطلون كارجو تكتيكال"
+    },
+    "description": {
+      "en": "Durable cargo pants with multiple utility pockets and an adjustable waist, built for function and street-ready style.",
+      "ar": "بنطلون كارجو متين بجيوب عملية متعددة وحزام قابل للتعديل، يجمع بين العملية والإطلالة الستريت."
+    },
+    "price": 49,
+    "oldPrice": 65,
+    "discount": 25,
+    "currency": "USD",
+    "rating": 4.4,
+    "reviews": 302,
+    "stock": 73,
+    "sizes": ["30", "32", "34", "36", "38"],
+    "colors": ["Khaki", "Black"],
+    "isNew": true,
+    "isFeatured": false,
+    "wishlist": false,
+    "buttonText": {
+      "en": "Add to Cart",
+      "ar": "أضف إلى السلة"
+    }
+  },
+  {
+    "id": 8,
+    "slug": "slim-fit-stretch-jeans",
+    "category": "Jeans",
+    "brand": "DenimHouse",
+    "images": [
+      "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1475178626620-a4d074967452?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1582552938357-32b906df40cb?auto=format&fit=crop&w=800&q=80"
+    ],
+    "title": {
+      "en": "Slim Fit Stretch Jeans",
+      "ar": "بنطلون جينز سليم فيت مطاطي"
+    },
+    "description": {
+      "en": "Slim fit jeans with added stretch for flexible movement and a clean tapered silhouette that pairs with any outfit.",
+      "ar": "جينز بقصة سليم مع خامة مطاطية تمنح مرونة في الحركة وشكلًا أنيقًا يناسب أي إطلالة."
+    },
+    "price": 55,
+    "oldPrice": 72,
+    "discount": 24,
+    "currency": "USD",
+    "rating": 4.6,
+    "reviews": 524,
+    "stock": 88,
+    "sizes": ["30", "32", "34", "36"],
+    "colors": ["Indigo Blue", "Black"],
+    "isNew": true,
+    "isFeatured": true,
+    "wishlist": false,
+    "buttonText": {
+      "en": "Add to Cart",
+      "ar": "أضف إلى السلة"
+    }
+  },
+  {
+    "id": 9,
+    "slug": "structured-cotton-cap",
+    "category": "Caps",
+    "brand": "HeadLine",
+    "images": [
+      "https://images.unsplash.com/photo-1521369909029-2afed882baee?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?auto=format&fit=crop&w=800&q=80"
+    ],
+    "title": {
+      "en": "Structured Cotton Cap",
+      "ar": "قبعة كاب قطنية مقواة"
+    },
+    "description": {
+      "en": "A structured six-panel cap made from breathable cotton twill with an adjustable strap for a custom fit.",
+      "ar": "قبعة كاب بستة قطع من قماش قطني قابل للتهوية مع حزام خلفي قابل للتعديل لضبط المقاس."
+    },
+    "price": 22,
+    "oldPrice": 28,
+    "discount": 21,
+    "currency": "USD",
+    "rating": 4.2,
+    "reviews": 145,
+    "stock": 110,
+    "sizes": ["One Size"],
+    "colors": ["Black", "White", "Navy"],
+    "isNew": true,
+    "isFeatured": false,
+    "wishlist": false,
+    "buttonText": {
+      "en": "Add to Cart",
+      "ar": "أضف إلى السلة"
+    }
+  },
+  {
+    "id": 10,
+    "slug": "urban-commuter-backpack",
+    "category": "Backpacks",
+    "brand": "PackLine",
+    "images": [
+      "https://images.unsplash.com/photo-1622560480605-d83c853bc5c3?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=800&q=80"
+    ],
+    "title": {
+      "en": "Urban Commuter Backpack",
+      "ar": "شنطة ظهر أوربان كوميوتر"
+    },
+    "description": {
+      "en": "A water-resistant backpack with a padded laptop compartment and multiple organizer pockets, built for daily commuting.",
+      "ar": "شنطة ظهر مقاومة للماء مزودة بحيز مبطن للابتوب وجيوب تنظيم متعددة، مثالية للاستخدام اليومي والتنقل."
+    },
+    "price": 42,
+    "oldPrice": 58,
+    "discount": 28,
+    "currency": "USD",
+    "rating": 4.5,
+    "reviews": 267,
+    "stock": 34,
+    "sizes": ["One Size"],
+    "colors": ["Black", "Grey"],
+    "isNew": true,
+    "isFeatured": false,
+    "wishlist": false,
+    "buttonText": {
+      "en": "Add to Cart",
+      "ar": "أضف إلى السلة"
+    }
+  },
+  {
+    "id": 11,
+    "slug": "windproof-utility-jacket",
+    "category": "Jackets",
+    "brand": "FieldGear",
+    "images": [
+      "https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1544022613-e87ca75a784a?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1520975954732-35dd22299614?auto=format&fit=crop&w=800&q=80"
+    ],
+    "title": {
+      "en": "Windproof Utility Jacket",
+      "ar": "جاكيت يوتيليتي مقاوم للرياح"
+    },
+    "description": {
+      "en": "A lightweight windproof jacket with a zip closure and multiple pockets, ideal for transitional weather and outdoor wear.",
+      "ar": "جاكيت خفيف مقاوم للرياح بسحاب أمامي وجيوب متعددة، مثالي للطقس المتقلب والاستخدام الخارجي."
+    },
+    "price": 75,
+    "oldPrice": 99,
+    "discount": 24,
+    "currency": "USD",
+    "rating": 4.7,
+    "reviews": 398,
+    "stock": 47,
+    "sizes": ["S", "M", "L", "XL"],
+    "colors": ["Black", "Olive"],
+    "isNew": true,
+    "isFeatured": true,
+    "wishlist": false,
+    "buttonText": {
+      "en": "Add to Cart",
+      "ar": "أضف إلى السلة"
+    }
+  },
+  {
+    "id": 12,
+    "slug": "active-mesh-shorts",
+    "category": "Shorts",
+    "brand": "VeloRun",
+    "images": [
+      "https://images.unsplash.com/photo-1591195853828-11db59a44f6b?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=800&q=80"
+    ],
+    "title": {
+      "en": "Active Mesh Shorts",
+      "ar": "شورت أكتيف من قماش شبكي"
+    },
+    "description": {
+      "en": "Breathable mesh shorts with an elastic drawstring waist, designed for training, running, and everyday comfort.",
+      "ar": "شورت رياضي من قماش شبكي مريح مع حزام مطاطي وربطة تعديل، مثالي للتمرين والجري والاستخدام اليومي."
+    },
+    "price": 29,
+    "oldPrice": 38,
+    "discount": 24,
+    "currency": "USD",
+    "rating": 4.3,
+    "reviews": 198,
+    "stock": 92,
+    "sizes": ["S", "M", "L", "XL"],
+    "colors": ["Black", "Grey", "Blue"],
+    "isNew": true,
+    "isFeatured": false,
+    "wishlist": false,
+    "buttonText": {
+      "en": "Add to Cart",
+      "ar": "أضف إلى السلة"
+    }
+  },
+  {
+    "id": 13,
+    "slug": "fleece-crew-sweatshirt",
+    "category": "Sweatshirts",
+    "brand": "Novexa Wear",
+    "images": [
+      "https://images.unsplash.com/photo-1614251055880-ee96e4803393?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1516826957135-700dedea698c?auto=format&fit=crop&w=800&q=80"
+    ],
+    "title": {
+      "en": "Fleece Crew Sweatshirt",
+      "ar": "سويت شيرت فليس برقبة دائرية"
+    },
+    "description": {
+      "en": "A cozy crew neck sweatshirt made from brushed fleece, offering warmth and a clean minimal look for cooler days.",
+      "ar": "سويت شيرت دافئ برقبة دائرية مصنوع من قماش فليس ناعم، يمنح دفئًا ومظهرًا بسيطًا وأنيقًا في الأجواء الباردة."
+    },
+    "price": 39,
+    "oldPrice": 52,
+    "discount": 25,
+    "currency": "USD",
+    "rating": 4.4,
+    "reviews": 231,
+    "stock": 78,
+    "sizes": ["S", "M", "L", "XL"],
+    "colors": ["Grey", "Black", "Cream"],
+    "isNew": true,
+    "isFeatured": false,
+    "wishlist": false,
+    "buttonText": {
+      "en": "Add to Cart",
+      "ar": "أضف إلى السلة"
+    }
+  },
+  {
+    "id": 14,
+    "slug": "ribbed-crew-socks-3pack",
+    "category": "Socks",
+    "brand": "BasicWear",
+    "images": [
+      "https://images.unsplash.com/photo-1586350977771-b3b0abd50c82?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1586350977771-2a4faaadc39c?auto=format&fit=crop&w=800&q=80"
+    ],
+    "title": {
+      "en": "Ribbed Crew Socks (3-Pack)",
+      "ar": "شراب كرو مضلع (3 قطع)"
+    },
+    "description": {
+      "en": "A pack of three ribbed crew socks made from a soft cotton blend, offering everyday comfort and durability.",
+      "ar": "عبوة من ثلاثة أزواج شراب مضلع مصنوعة من خليط قطني ناعم، توفر راحة ومتانة للاستخدام اليومي."
+    },
+    "price": 14,
+    "oldPrice": 18,
+    "discount": 22,
+    "currency": "USD",
+    "rating": 4.1,
+    "reviews": 412,
+    "stock": 115,
+    "sizes": ["S", "M", "L"],
+    "colors": ["White", "Black", "Grey"],
+    "isNew": true,
+    "isFeatured": false,
+    "wishlist": false,
+    "buttonText": {
+      "en": "Add to Cart",
+      "ar": "أضف إلى السلة"
+    }
+  },
+  {
+    "id": 15,
+    "slug": "leather-strap-accessory-set",
+    "category": "Accessories",
+    "brand": "HeadLine",
+    "images": [
+      "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1611085583191-a3b181a88401?auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=800&q=80"
+    ],
+    "title": {
+      "en": "Leather Strap Accessory Set",
+      "ar": "طقم إكسسوارات بحزام جلد"
+    },
+    "description": {
+      "en": "A minimal accessory set featuring a genuine leather strap bracelet and matching keychain, perfect for everyday styling.",
+      "ar": "طقم إكسسوارات بسيط يضم سوار من الجلد الطبيعي وميدالية مفاتيح مطابقة، مثالي للإطلالة اليومية."
+    },
+    "price": 24,
+    "oldPrice": 32,
+    "discount": 25,
+    "currency": "USD",
+    "rating": 4.3,
+    "reviews": 87,
+    "stock": 60,
+    "sizes": ["One Size"],
+    "colors": ["Brown", "Black"],
+    "isNew": true,
+    "isFeatured": false,
+    "wishlist": false,
+    "buttonText": {
+      "en": "Add to Cart",
+      "ar": "أضف إلى السلة"
+    }
+  }
+]

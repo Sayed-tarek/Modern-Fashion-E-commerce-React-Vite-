@@ -1,0 +1,23 @@
+/* src/dashboard/pages/DashboardHome/DashboardHome.css */
+.dash-quick-table-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.table-hover tbody tr:hover {
+  background-color: var(--dash-surface-hover);
+}
+
+.stock-progress-bar {
+  height: 6px;
+  border-radius: 3px;
+  background-color: var(--dash-border-subtle);
+  overflow: hidden;
+}
+
+.stock-progress-fill {
+  height: 100%;
+  border-radius: 3px;
+}

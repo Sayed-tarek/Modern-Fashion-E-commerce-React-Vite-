@@ -1,0 +1,19 @@
+{
+  "nav": {
+    "home": "الرئيسية",
+    "shop": "المتجر",
+    "categories": "الفئات",
+    "newArrivals": "وصل حديثاً",
+    "bestSellers": "الأكثر مبيعاً",
+    "wishlist": "قائمة الأمنيات",
+    "cart": "السلة",
+    "about": "عن المتجر",
+    "contact": "تواصل معنا",
+    "search": "بحث",
+    "login": "تسجيل الدخول",
+    "register": "إنشاء حساب",
+    "profile": "الملف الشخصي",
+    "productDetails": "تفاصيل المنتج",
+    "logout": "تسجيل الخروج"
+  }
+}

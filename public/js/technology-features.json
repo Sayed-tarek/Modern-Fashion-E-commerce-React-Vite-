@@ -1,0 +1,74 @@
+[
+  {
+    "id": "aero-foam",
+    "icon": "GiRunningShoe",
+    "title": {
+      "en": "Aero Foam",
+      "ar": "إيروفوم المبتكر"
+    },
+    "description": {
+      "en": "Ultra-lightweight foam cushioning for maximum energy return and shock absorption.",
+      "ar": "تبطين رغوي خفيف الوزن يمنحك امتصاصاً ممتازاً للصدمات ومرونة فائقة."
+    }
+  },
+  {
+    "id": "flex-motion",
+    "icon": "MdDirectionsRun",
+    "title": {
+      "en": "Flex Motion",
+      "ar": "مرونة الحركة"
+    },
+    "description": {
+      "en": "Ergonomic flex grooves that adapt naturally to every movement of your foot.",
+      "ar": "أخاديد انحناء مريحة تلتف طبيعياً مع كل حركة لخطواتك أثناء الحركة والجري."
+    }
+  },
+  {
+    "id": "grip-control",
+    "icon": "GiFootprint",
+    "title": {
+      "en": "Grip Control",
+      "ar": "تحكم وثبات النعل"
+    },
+    "description": {
+      "en": "Advanced rubber outsole pattern delivering non-slip traction on all surfaces.",
+      "ar": "نعل مطاطي متطور بنقوش عالية الثبات يمنع الانزلاق على كافة الأسطح."
+    }
+  },
+  {
+    "id": "breath-tech",
+    "icon": "FaWind",
+    "title": {
+      "en": "Breath Tech",
+      "ar": "تقنية التهوية"
+    },
+    "description": {
+      "en": "Engineered breathable mesh upper ensuring continuous airflow and cool comfort.",
+      "ar": "قماش شبكي متطور يضمن تدفق الهواء بانتظام لراحة وانتعاش قدميك."
+    }
+  },
+  {
+    "id": "heel-support",
+    "icon": "GiLeg",
+    "title": {
+      "en": "Heel Support",
+      "ar": "دعم الكعب"
+    },
+    "description": {
+      "en": "Reinforced heel counter providing optimum stability and ankle protection.",
+      "ar": "دعامة خلفية متينة توفر استقراراً مثالياً وحماية متكاملة للكاحل."
+    }
+  },
+  {
+    "id": "eco-materials",
+    "icon": "FaLeaf",
+    "title": {
+      "en": "Eco Materials",
+      "ar": "خامات صديقة للبيئة"
+    },
+    "description": {
+      "en": "Sustainably crafted using recycled fibers and eco-conscious manufacturing.",
+      "ar": "تصميم مستدام مصنع من ألياف ومواد معاد تدويرها وصديقة للبيئة."
+    }
+  }
+]

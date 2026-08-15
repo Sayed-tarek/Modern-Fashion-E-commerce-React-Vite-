@@ -1,0 +1,88 @@
+:root {
+  /* Primary (Original Aero Step Dark Olive) */
+  --primary: #515546;
+  --primary-hover: #3F4236;
+  --primary-light: #F2F4EE;
+
+  /* Secondary */
+  --secondary: #F5F6F2;
+
+  /* Accent */
+  --accent: #EBB437;
+
+  /* Success */
+  --success: #86A17B;
+
+  /* Warning */
+  --warning: #EBB437;
+
+  /* Danger */
+  --danger: #DC6860;
+
+  /* Background */
+  --bg: #FFFFFF;
+  --bg-secondary: #F8F9F5;
+  --surface: #F5F6F2;
+  --surface-hover: #ECEEE8;
+
+  /* Text */
+  --text-primary: #1A1A1A;
+  --text-secondary: #5F6358;
+  --text-muted: #969A8E;
+  --text-white: #FFFFFF;
+
+  /* Border */
+  --border: #E2E4DC;
+  --border-light: #EFF1EA;
+
+  /* Shadow */
+  --shadow-color: #00000014;
+
+  /* Fonts */
+  --font-en: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-ar: 'Cairo', 'Tajawal', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+html[dir="rtl"] {
+  font-family: var(--font-ar);
+  direction: rtl;
+}
+
+html[dir="ltr"] {
+  font-family: var(--font-en);
+  direction: ltr;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: inherit;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+html.switching-lang *,
+html.switching-lang *::before,
+html.switching-lang *::after {
+  transition: none !important;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+}
+
+/* Accessibility: Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+  [data-aos] {
+    transition-property: none !important;
+    transform: none !important;
+    animation: none !important;
+  }
+}

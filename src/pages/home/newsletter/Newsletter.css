@@ -1,0 +1,273 @@
+/* Newsletter Section Container */
+.newsletter-section {
+  width: 100%;
+  max-width: 1360px;
+  margin: 70px auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+  animation: newsletterFadeIn 0.6s ease-out forwards;
+}
+
+/* Banner Card */
+.newsletter-banner {
+  position: relative;
+  background: linear-gradient(135deg, var(--primary) 0%, #35392D 100%);
+  border-radius: 28px;
+  padding: 56px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: var(--text-white);
+  box-shadow: 0 12px 36px var(--shadow-color);
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* Decorative Background Accents */
+.newsletter-banner::before {
+  content: '';
+  position: absolute;
+  top: -60px;
+  left: -60px;
+  width: 240px;
+  height: 240px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.newsletter-banner::after {
+  content: '';
+  position: absolute;
+  bottom: -60px;
+  right: -60px;
+  width: 260px;
+  height: 260px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0) 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+/* Header Content */
+.newsletter-icon-badge {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.16);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  color: #ffffff;
+  margin-bottom: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.newsletter-title {
+  font-size: 2.3rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0 0 12px 0;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.newsletter-subtitle {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.85);
+  max-width: 580px;
+  margin: 0 0 36px 0;
+  line-height: 1.6;
+}
+
+/* Subscription Form Bar */
+.newsletter-form {
+  width: 100%;
+  max-width: 560px;
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.16);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 40px;
+  padding: 6px;
+  gap: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.newsletter-form:focus-within {
+  background: rgba(255, 255, 255, 0.22);
+  border-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+}
+
+.newsletter-input-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+  min-width: 0;
+  padding: 0 16px;
+}
+
+.input-icon {
+  color: rgba(255, 255, 255, 0.85);
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.newsletter-input {
+  flex: 1;
+  min-width: 0;
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-family: inherit;
+}
+
+html[dir="rtl"] .newsletter-input {
+  text-align: right;
+}
+
+.newsletter-input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.newsletter-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 44px;
+  padding: 0 28px;
+  border-radius: 30px;
+  background-color: #ffffff;
+  color: var(--primary);
+  font-size: 0.92rem;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+}
+
+.newsletter-btn:hover {
+  background-color: #f5f5f0;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.16);
+}
+
+.newsletter-btn svg {
+  transition: transform 0.25s ease;
+}
+
+html[dir="rtl"] .newsletter-btn svg {
+  transform: scaleX(-1);
+}
+
+.newsletter-btn:hover svg {
+  transform: translateX(3px);
+}
+
+html[dir="rtl"] .newsletter-btn:hover svg {
+  transform: scaleX(-1) translateX(3px);
+}
+
+/* Success Toast Notification */
+.newsletter-success-toast {
+  margin-top: 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: #ffffff;
+  font-size: 0.88rem;
+  font-weight: 600;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  animation: fadeInToast 0.4s ease-out forwards;
+}
+
+@keyframes fadeInToast {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes newsletterFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Rules */
+@media (max-width: 640px) {
+  .newsletter-section {
+    margin: 44px auto;
+    padding: 0 16px;
+  }
+
+  .newsletter-banner {
+    padding: 36px 18px;
+    border-radius: 20px;
+  }
+
+  .newsletter-title {
+    font-size: 1.65rem;
+  }
+
+  .newsletter-subtitle {
+    font-size: 0.88rem;
+    margin-bottom: 24px;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    gap: 12px;
+  }
+
+  .newsletter-input-wrapper {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.16);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 30px;
+    padding: 12px 18px;
+    box-sizing: border-box;
+  }
+
+  .newsletter-btn {
+    width: 100%;
+    height: 48px;
+    border-radius: 30px;
+    justify-content: center;
+  }
+}

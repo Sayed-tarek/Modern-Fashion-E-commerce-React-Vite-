@@ -1,0 +1,36 @@
+{
+  "brandDescription": "اكتشف تشكيلات الأحذية والأزياء الفاخرة المصممة لأعلى مستويات الراحة والأناقة العصرية.",
+  "sections": {
+    "shop": "تسوق",
+    "customerService": "خدمة العملاء",
+    "company": "عن الشركة",
+    "followUs": "تابعنا على",
+    "paymentMethods": "طرق الدفع المتاحة"
+  },
+  "links": {
+    "newArrivals": "وصل حديثاً",
+    "bestSellers": "الأكثر مبيعاً",
+    "sneakers": "أحذية سنيكرز",
+    "runningShoes": "أحذية الجري",
+    "lifestyle": "لايف ستايل",
+    "sale": "العروض والتخفيضات",
+    "privacyPolicy": "سياسة الخصوصية",
+    "termsAndConditions": "الشروط والأحكام",
+    "shipping": "الشحن والتوصيل",
+    "returns": "الإرجاع والاستبدال",
+    "faqs": "مركز المساعدة والأسئلة الشائعة",
+    "trackOrder": "تتبع طلبك",
+    "contactUs": "تواصل معنا",
+    "ourStory": "قصتنا",
+    "sustainability": "الاستدامة والبيئة",
+    "careers": "الوظائف"
+  },
+  "contact": {
+    "address": "شارع الموضة، الرياض، المملكة العربية السعودية",
+    "phone": "+966 800 555 AERO",
+    "email": "support@aerostep.com"
+  },
+  "legal": {
+    "allRightsReserved": "جميع الحقوق محفوظة"
+  }
+}

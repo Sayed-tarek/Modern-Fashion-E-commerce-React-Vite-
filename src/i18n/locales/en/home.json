@@ -1,0 +1,66 @@
+{
+  "hero": {
+    "badge": "PREMIUM COLLECTION",
+    "title": "Elevate Your Style",
+    "subtitle": "Discover the latest fashion trends and handcrafted designs curated for every occasion.",
+    "exploreCollection": "Explore Collection"
+  },
+  "categories": {
+    "title": "Shop by Category",
+    "subtitle": "Browse our curated selection of fashion categories",
+    "viewAllCategories": "View All Categories"
+  },
+  "featuredProducts": {
+    "badge": "BEST SELLERS",
+    "title": "Featured Products",
+    "subtitle": "Discover our most loved products chosen by thousands of customers.",
+    "viewAll": "View All"
+  },
+  "justLanded": {
+    "title": "Just Landed",
+    "subtitle": "Fresh arrivals straight from the runaway"
+  },
+  "trending": {
+    "title": "Trending Now",
+    "subtitle": "Discover what everyone is loving this season"
+  },
+  "specialOffers": {
+    "title": "Special Offers",
+    "subtitle": "Exclusive discounts up to 50% off select styles",
+    "discoverMore": "Discover More"
+  },
+  "testimonials": {
+    "title": "Customer Testimonials",
+    "subtitle": "Read reviews from our fashion-forward community"
+  },
+  "newsletter": {
+    "title": "Stay in Style",
+    "subtitle": "Subscribe to receive exclusive offers, new arrivals and fashion inspiration.",
+    "placeholder": "Enter your email address...",
+    "subscribe": "Subscribe",
+    "successMessage": "Thank you for subscribing to our newsletter!"
+  },
+  "features": {
+    "freeShipping": {
+      "title": "Free Shipping",
+      "subtitle": "On orders over $100"
+    },
+    "tryBeforePay": {
+      "title": "Try Before Payment",
+      "subtitle": "14 days easy returns"
+    },
+    "originalProducts": {
+      "title": "100% Original Products",
+      "subtitle": "Guaranteed quality"
+    },
+    "socialProof": {
+      "title": "10,000+ Happy Clients",
+      "rating": "4.9"
+    }
+  },
+  "techSection": {
+    "badge": "TECHNOLOGY",
+    "title": "Technology Behind Every Step",
+    "subtitle": "Discover the innovative technologies designed to provide superior comfort, durability, and performance."
+  }
+}

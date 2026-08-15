@@ -1,0 +1,126 @@
+.product-skeleton-container {
+  width: 100%;
+  max-width: 1360px;
+  margin: 100px auto 60px auto;
+  padding: 0 24px;
+  box-sizing: border-box;
+}
+
+.product-skeleton-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  margin-bottom: 60px;
+}
+
+.skeleton-gallery-box {
+  width: 100%;
+  padding-top: 100%;
+  border-radius: 24px;
+  background-color: var(--surface);
+  position: relative;
+}
+
+.skeleton-thumbs-row {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.skeleton-thumb-box {
+  width: 80px;
+  height: 80px;
+  border-radius: 14px;
+  background-color: var(--surface);
+}
+
+.skeleton-info-col {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.skeleton-badge {
+  width: 90px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: var(--surface);
+}
+
+.skeleton-heading {
+  width: 80%;
+  height: 36px;
+  border-radius: 8px;
+  background-color: var(--surface);
+}
+
+.skeleton-price {
+  width: 120px;
+  height: 28px;
+  border-radius: 8px;
+  background-color: var(--surface);
+}
+
+.skeleton-desc {
+  width: 100%;
+  height: 60px;
+  border-radius: 12px;
+  background-color: var(--surface);
+}
+
+.skeleton-selector {
+  width: 100%;
+  height: 44px;
+  border-radius: 12px;
+  background-color: var(--surface);
+}
+
+.skeleton-btn-row {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.skeleton-btn {
+  flex: 1;
+  height: 50px;
+  border-radius: 30px;
+  background-color: var(--surface);
+}
+
+/* Shimmer Animation */
+.shimmer {
+  position: relative;
+  overflow: hidden;
+}
+
+.shimmer::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateX(-100%);
+  background-image: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0,
+    rgba(255, 255, 255, 0.6) 20%,
+    rgba(255, 255, 255, 0.8) 60%,
+    rgba(255, 255, 255, 0)
+  );
+  animation: prodShimmer 1.5s infinite;
+}
+
+@keyframes prodShimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@media (max-width: 991px) {
+  .product-skeleton-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}

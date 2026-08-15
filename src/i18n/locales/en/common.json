@@ -1,0 +1,30 @@
+{
+  "buttons": {
+    "shopNow": "Shop Now",
+    "viewAll": "View All",
+    "loadMore": "Load More",
+    "addToCart": "Add To Cart",
+    "buyNow": "Buy Now",
+    "continueShopping": "Continue Shopping",
+    "checkout": "Checkout",
+    "subscribe": "Subscribe",
+    "save": "Save",
+    "cancel": "Cancel",
+    "search": "Search",
+    "filter": "Filter",
+    "apply": "Apply",
+    "clear": "Clear",
+    "readMore": "Read More",
+    "viewDetails": "View Details"
+  },
+  "general": {
+    "loading": "Loading...",
+    "noResults": "No Results",
+    "new": "New",
+    "sale": "Sale",
+    "featured": "Featured",
+    "bestSeller": "Best Seller",
+    "outOfStock": "Out Of Stock",
+    "inStock": "In Stock"
+  }
+}

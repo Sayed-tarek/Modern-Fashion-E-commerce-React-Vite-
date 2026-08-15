@@ -1,0 +1,69 @@
+/* Register Specific Form Layout */
+.form-row-2col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+/* Password Strength Indicator Box */
+.password-strength-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 4px;
+}
+
+.strength-bar-track {
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--border);
+  overflow: hidden;
+}
+
+.strength-bar-fill {
+  height: 100%;
+  border-radius: 2px;
+  transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+.strength-fill-weak {
+  width: 33%;
+  background-color: var(--danger);
+}
+
+.strength-fill-medium {
+  width: 66%;
+  background-color: var(--warning);
+}
+
+.strength-fill-strong {
+  width: 100%;
+  background-color: var(--success);
+}
+
+.strength-text {
+  font-size: 0.76rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+}
+
+.text-weak {
+  color: var(--danger);
+}
+
+.text-medium {
+  color: var(--warning);
+}
+
+.text-strong {
+  color: var(--success);
+}
+
+@media (max-width: 576px) {
+  .form-row-2col {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+}
