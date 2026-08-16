@@ -152,18 +152,16 @@ export const ProductInfo = ({ product }) => {
           />
         )}
 
-        {/* Quantity & Actions Grid */}
+        {/* Quantity & Actions Unified Grid */}
         <div className="actions-section">
-          <div className="quantity-row">
+          <div className="main-action-controls-row">
             <QuantitySelector
               quantity={quantity}
               onIncrease={() => setQuantity((q) => Math.min(q + 1, stock))}
               onDecrease={() => setQuantity((q) => Math.max(q - 1, 1))}
               maxStock={stock}
             />
-          </div>
 
-          <div className="main-btn-row">
             <button
               type="button"
               className="btn-add-cart"

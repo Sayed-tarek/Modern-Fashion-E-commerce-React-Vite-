@@ -134,10 +134,10 @@ html[dir="rtl"] .product-info-wrapper {
   display: flex;
   flex-direction: column;
   gap: 14px;
-  margin-top: 10px;
+  margin-top: 14px;
 }
 
-.main-btn-row {
+.main-action-controls-row {
   display: flex;
   align-items: center;
   gap: 14px;
@@ -160,6 +160,7 @@ html[dir="rtl"] .product-info-wrapper {
   gap: 10px;
   transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
   box-shadow: 0 6px 20px rgba(81, 85, 70, 0.28);
+  white-space: nowrap;
 }
 
 .btn-add-cart:hover {
@@ -237,20 +238,25 @@ html[dir="rtl"] .product-info-wrapper {
     font-size: 1.5rem;
   }
 
-  .main-btn-row {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  .main-action-controls-row {
+    flex-wrap: wrap;
     gap: 10px;
   }
 
   .btn-add-cart {
-    flex: 1;
+    flex: 1 1 100%;
+    order: 2;
     height: 50px;
     font-size: 0.95rem;
   }
 
+  .quantity-selector-box {
+    order: 1;
+    flex: 1;
+  }
+
   .icon-action-btn {
+    order: 1;
     width: 50px;
     height: 50px;
   }
